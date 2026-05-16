@@ -30,6 +30,8 @@ else:
         total_galones += galones
         total_tanqueos += 1
 
+# Actualizado por Laura
+
         if rendimiento > mejor_rendimiento:
             mejor_rendimiento = rendimiento
             # contar gasolina extra
