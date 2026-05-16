@@ -45,7 +45,7 @@ else:
         rendimiento_promedio = total_km / total_galones
         porcentaje_extras = (tanqueos_extras / total_tanqueos) * 100
 
-    # Imprimir resultados
+    # Imprimir resultados finales
     print(f"Rendimiento promedio: {rendimiento_promedio}")
     print(f"Mejor rendimiento: {mejor_rendimiento}")
     print(f"Total de tanqueos: {total_tanqueos}")
