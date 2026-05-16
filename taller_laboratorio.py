@@ -42,11 +42,12 @@ else:
         galones = float(input())
 
         #calculos finales               
-        rendimiento_promedio = total_km / total_galones
+        promedio = total_km / total_galones
         porcentaje_extras = (tanqueos_extras / total_tanqueos) * 100
 
-    # Imprimir resultados finales
-    print(f"Rendimiento promedio: {rendimiento_promedio}")
-    print(f"Mejor rendimiento: {mejor_rendimiento}")
-    print(f"Total de tanqueos: {total_tanqueos}")
-    print(f"Tanqueos con gasolina extra: {tanqueos_extras}")
+    # Salida (Output)
+    print(f"AVG: {promedio}")
+    print(f"BEST: {mejor_rendimiento}")
+    print(f"EXTRA: {porcentaje_extras}")
+
+    
