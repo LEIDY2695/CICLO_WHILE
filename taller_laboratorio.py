@@ -29,3 +29,22 @@ else:
         total_km += km
         total_galones += galones
         total_tanqueos += 1
+
+        if rendimiento > mejor_rendimiento:
+            mejor_rendimiento = rendimiento
+            # contar gasolina extra
+        if octanaje >= 90:
+            tanqueos_extras += 1
+
+        #pedir nuevos galones
+        galones = float(input())
+
+        #calculos finales               
+        rendimiento_promedio = total_km / total_galones
+        porcentaje_extras = (tanqueos_extras / total_tanqueos) * 100
+
+    # Imprimir resultados
+    print(f"Rendimiento promedio: {rendimiento_promedio}")
+    print(f"Mejor rendimiento: {mejor_rendimiento}")
+    print(f"Total de tanqueos: {total_tanqueos}")
+    print(f"Tanqueos con gasolina extra: {tanqueos_extras}")
