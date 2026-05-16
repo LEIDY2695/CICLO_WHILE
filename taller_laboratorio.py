@@ -18,11 +18,13 @@ else:
         # Kilometros recorridos
         km = float(input())
         # Octanaje
-        octanaje = int(input())
-        # Validacion del octanaje
-        while octanaje < 81 or octanaje > 98:
+        octanaje = float(input())
+
+        while octanaje < 81 or octanaje > 98 or octanaje != int(octanaje):
             print("OCTANAJE INVALIDO")
-            octanaje = int(input())
+            octanaje = float(input())
+
+        octanaje = int(octanaje)
         # Calcular rendimiento 
         rendimiento = km / galones
         # Acumular datos
@@ -46,8 +48,8 @@ else:
         porcentaje_extras = (tanqueos_extras / total_tanqueos) * 100
 
     # Salida (Output)
-    print(f"AVG: {promedio}")
-    print(f"BEST: {mejor_rendimiento}")
-    print(f"EXTRA: {porcentaje_extras}")
+    print(f"AVG: {promedio:.2f}")
+    print(f"BEST: {mejor_rendimiento:.2f}")
+    print(f"EXTRA: {porcentaje_extras:.2f}")
 
     
