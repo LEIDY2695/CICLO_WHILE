@@ -1,3 +1,12 @@
+# Problematica : Se necesita analizar el historial de tanquoeos para conocer la eficiencia del consumo del combustible y verificar la calidad de la gasolina utilizada. 
+# Se requiere calcular el rendimiento promedio, identificar el mejor rendimiento registrado y determinar el porcentaje de tanqueos que utilizaron gasolina de octanaje alto (90 o más).   
+
+# Solucion : Desarrollar un algoritmo que permita registrar varios tanqueos. (Hasta que se ingrese 0 galones). 
+# Para cada tanqueo, se solicitará la cantidad de galones, los kilómetros recorridos y el octanaje de la gasolina. 
+# El algoritmo calculará el rendimiento de cada tanqueo, acumulará los datos necesarios para calcular el rendimiento promedio.
+# identificará el mejor rendimiento registrado y contará cuántos tanqueos utilizaron gasolina de octanaje alto. 
+# Al finalizar la entrada de datos, se mostrará el rendimiento promedio, el mejor rendimiento y el porcentaje de tanqueos con gasolina de octanaje alto.
+
 # Varibales
 
 total_km = 0
